@@ -1,0 +1,293 @@
+{
+  "dataset": {
+    "samples": 150,
+    "features": [
+      "sepal length (cm)",
+      "sepal width (cm)",
+      "petal length (cm)",
+      "petal width (cm)"
+    ],
+    "classes": [
+      "setosa",
+      "versicolor",
+      "virginica"
+    ],
+    "train_samples": 120,
+    "test_samples": 30,
+    "random_state": 42
+  },
+  "baseline_k5_test_metrics": {
+    "k": 5,
+    "accuracy": 0.9333,
+    "precision_macro": 0.9444,
+    "recall_macro": 0.9333,
+    "f1_macro": 0.9327,
+    "precision_weighted": 0.9444,
+    "recall_weighted": 0.9333,
+    "f1_weighted": 0.9327,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        2,
+        8
+      ]
+    ],
+    "per_class_diagnostics": {
+      "setosa": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "versicolor": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 0,
+        "tn": 18,
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "support": 10
+      },
+      "virginica": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "tn": 20,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "support": 10
+      }
+    }
+  },
+  "cv_tuning": {
+    "best_k": 3,
+    "best_cv_accuracy": 0.9667,
+    "cv_table": [
+      {
+        "k": 1,
+        "mean_cv_accuracy": 0.9417,
+        "error_rate": 0.0583,
+        "std_cv_accuracy": 0.0204
+      },
+      {
+        "k": 2,
+        "mean_cv_accuracy": 0.95,
+        "error_rate": 0.05,
+        "std_cv_accuracy": 0.0312
+      },
+      {
+        "k": 3,
+        "mean_cv_accuracy": 0.9667,
+        "error_rate": 0.0333,
+        "std_cv_accuracy": 0.0167
+      },
+      {
+        "k": 4,
+        "mean_cv_accuracy": 0.9583,
+        "error_rate": 0.0417,
+        "std_cv_accuracy": 0.0264
+      },
+      {
+        "k": 5,
+        "mean_cv_accuracy": 0.9583,
+        "error_rate": 0.0417,
+        "std_cv_accuracy": 0.0264
+      },
+      {
+        "k": 6,
+        "mean_cv_accuracy": 0.9417,
+        "error_rate": 0.0583,
+        "std_cv_accuracy": 0.0204
+      },
+      {
+        "k": 7,
+        "mean_cv_accuracy": 0.9333,
+        "error_rate": 0.0667,
+        "std_cv_accuracy": 0.0204
+      },
+      {
+        "k": 8,
+        "mean_cv_accuracy": 0.9417,
+        "error_rate": 0.0583,
+        "std_cv_accuracy": 0.0204
+      },
+      {
+        "k": 9,
+        "mean_cv_accuracy": 0.9583,
+        "error_rate": 0.0417,
+        "std_cv_accuracy": 0.0264
+      },
+      {
+        "k": 10,
+        "mean_cv_accuracy": 0.9583,
+        "error_rate": 0.0417,
+        "std_cv_accuracy": 0.0
+      },
+      {
+        "k": 11,
+        "mean_cv_accuracy": 0.95,
+        "error_rate": 0.05,
+        "std_cv_accuracy": 0.0408
+      },
+      {
+        "k": 12,
+        "mean_cv_accuracy": 0.9583,
+        "error_rate": 0.0417,
+        "std_cv_accuracy": 0.0264
+      },
+      {
+        "k": 13,
+        "mean_cv_accuracy": 0.95,
+        "error_rate": 0.05,
+        "std_cv_accuracy": 0.0312
+      },
+      {
+        "k": 14,
+        "mean_cv_accuracy": 0.925,
+        "error_rate": 0.075,
+        "std_cv_accuracy": 0.0167
+      },
+      {
+        "k": 15,
+        "mean_cv_accuracy": 0.925,
+        "error_rate": 0.075,
+        "std_cv_accuracy": 0.0167
+      },
+      {
+        "k": 16,
+        "mean_cv_accuracy": 0.925,
+        "error_rate": 0.075,
+        "std_cv_accuracy": 0.0312
+      },
+      {
+        "k": 17,
+        "mean_cv_accuracy": 0.925,
+        "error_rate": 0.075,
+        "std_cv_accuracy": 0.0312
+      },
+      {
+        "k": 18,
+        "mean_cv_accuracy": 0.925,
+        "error_rate": 0.075,
+        "std_cv_accuracy": 0.0486
+      },
+      {
+        "k": 19,
+        "mean_cv_accuracy": 0.9167,
+        "error_rate": 0.0833,
+        "std_cv_accuracy": 0.0527
+      },
+      {
+        "k": 20,
+        "mean_cv_accuracy": 0.9167,
+        "error_rate": 0.0833,
+        "std_cv_accuracy": 0.0527
+      },
+      {
+        "k": 21,
+        "mean_cv_accuracy": 0.9167,
+        "error_rate": 0.0833,
+        "std_cv_accuracy": 0.0527
+      },
+      {
+        "k": 22,
+        "mean_cv_accuracy": 0.9083,
+        "error_rate": 0.0917,
+        "std_cv_accuracy": 0.0408
+      },
+      {
+        "k": 23,
+        "mean_cv_accuracy": 0.9083,
+        "error_rate": 0.0917,
+        "std_cv_accuracy": 0.0408
+      },
+      {
+        "k": 24,
+        "mean_cv_accuracy": 0.9,
+        "error_rate": 0.1,
+        "std_cv_accuracy": 0.05
+      },
+      {
+        "k": 25,
+        "mean_cv_accuracy": 0.8917,
+        "error_rate": 0.1083,
+        "std_cv_accuracy": 0.0565
+      }
+    ]
+  },
+  "tuned_test_metrics": {
+    "k": 3,
+    "accuracy": 0.9333,
+    "precision_macro": 0.9444,
+    "recall_macro": 0.9333,
+    "f1_macro": 0.9327,
+    "precision_weighted": 0.9444,
+    "recall_weighted": 0.9333,
+    "f1_weighted": 0.9327,
+    "confusion_matrix": [
+      [
+        10,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0
+      ],
+      [
+        0,
+        2,
+        8
+      ]
+    ],
+    "per_class_diagnostics": {
+      "setosa": {
+        "tp": 10,
+        "fp": 0,
+        "fn": 0,
+        "tn": 20,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 10
+      },
+      "versicolor": {
+        "tp": 10,
+        "fp": 2,
+        "fn": 0,
+        "tn": 18,
+        "precision": 0.8333,
+        "recall": 1.0,
+        "f1": 0.9091,
+        "support": 10
+      },
+      "virginica": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 2,
+        "tn": 20,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "support": 10
+      }
+    }
+  }
+}
